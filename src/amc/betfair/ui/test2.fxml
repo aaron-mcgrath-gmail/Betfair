@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Manage Rules">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="694.0">
+              <children>
+                <ChoiceBox layoutX="119.0" layoutY="97.0" prefWidth="308.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <Line endX="290.0" endY="0.0" layoutX="305.0" layoutY="253.0" startX="-286.0" startY="0.0" />
+                <Label layoutX="234.0" layoutY="256.0" text="Premium Features" />
+                <ChoiceBox layoutX="97.0" layoutY="286.0" prefWidth="166.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <Button layoutX="15.0" layoutY="58.0" mnemonicParsing="false" text="Create New Rule" underline="false" />
+                <Button layoutX="15.0" layoutY="138.0" mnemonicParsing="false" text="Import New Rule from file" />
+                <Button layoutX="15.0" layoutY="174.0" mnemonicParsing="false" text="Export Rule to file" />
+                <Button layoutX="129.0" layoutY="174.0" mnemonicParsing="false" text="Share Rule with Market" />
+                <Button layoutX="173.0" layoutY="138.0" mnemonicParsing="false" text="Import New Rule from Market" />
+                <Button layoutX="518.0" layoutY="97.0" mnemonicParsing="false" text="Delete" />
+                <Button layoutX="477.0" layoutY="97.0" mnemonicParsing="false" text="Edit" />
+                <Button layoutX="431.0" layoutY="97.0" mnemonicParsing="false" text="View" />
+                <Button layoutX="19.0" layoutY="286.0" mnemonicParsing="false" text="Test a Rule" />
+                <ChoiceBox layoutX="419.0" layoutY="286.0" prefWidth="166.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <Label layoutX="283.0" layoutY="288.0" prefWidth="143.0" text="Against which Data Set ?" />
+                <Button layoutX="489.0" layoutY="343.0" mnemonicParsing="false" text="Unlock Premium" />
+                <Label layoutX="15.0" layoutY="12.0" prefWidth="557.0" text="Rules - Only rules listed here will be available to select and use in live Markets">
+                  <font>
+                    <Font name="System Bold" size="12.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Button layoutX="19.0" layoutY="322.0" mnemonicParsing="false" text="Certify Rule Online" />
+                <Label layoutX="25.0" layoutY="99.0" text="Available Rules" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Manage Market Data">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="694.0">
+              <children>
+                <ChoiceBox layoutX="137.0" layoutY="97.0" prefWidth="290.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ChoiceBox>
+                <Line endX="290.0" endY="0.0" layoutX="305.0" layoutY="253.0" startX="-286.0" startY="0.0" />
+                <Label layoutX="234.0" layoutY="256.0" text="Premium Features" />
+                <Button layoutX="15.0" layoutY="58.0" mnemonicParsing="false" text="Record New Data" />
+                <Button layoutX="15.0" layoutY="138.0" mnemonicParsing="false" text="Import Data Set from file" />
+                <Button layoutX="167.0" layoutY="138.0" mnemonicParsing="false" text="Import Data Set from Market" />
+                <Button layoutX="518.0" layoutY="97.0" mnemonicParsing="false" text="Delete" />
+                <Button layoutX="477.0" layoutY="97.0" mnemonicParsing="false" text="Edit" />
+                <Button layoutX="431.0" layoutY="97.0" mnemonicParsing="false" text="View" />
+                <Button layoutX="489.0" layoutY="343.0" mnemonicParsing="false" text="Unlock Premium" />
+                <Label disable="false" focusTraversable="false" font="$x1" layoutX="15.0" layoutY="12.0" prefWidth="557.0" text="Market Data Sets - Collections of Historical data for you to test rules against" textAlignment="LEFT" underline="false" />
+                <Button layoutX="19.0" layoutY="286.0" mnemonicParsing="false" text="Export Data Set to file" />
+                <Button layoutX="155.0" layoutY="286.0" mnemonicParsing="false" text="Share Data Set with Market" />
+                <Slider layoutX="140.0" layoutY="62.0" prefWidth="259.0" />
+                <TextField layoutX="402.0" layoutY="57.0" prefWidth="81.0" text="0-24 Hours" />
+                <Button layoutX="482.0" layoutY="57.0" mnemonicParsing="false" text="Options" />
+                <Label layoutX="25.0" layoutY="99.0" text="Available Data Sets" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
