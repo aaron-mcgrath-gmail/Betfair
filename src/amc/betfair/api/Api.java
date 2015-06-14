@@ -74,6 +74,7 @@ public class Api {
           .listMarketCatalogue(marketFilter, marketProjection, MarketSort.FIRST_TO_START, maxResults, applicationKey, sessionToken);
       
       if(marketCatalogueResult != null) {
+
         if(marketCatalogueResult.size() == 1)
           return marketCatalogueResult.get(0);
         else
