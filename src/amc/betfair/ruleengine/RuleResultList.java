@@ -31,6 +31,10 @@ public class RuleResultList {
     
     return result;
   }
+  
+  public void add(RuleResult ruleResult) {
+    this.getRuleResults().add(ruleResult);
+  }
 
   public List<RuleResult> getRuleResults() {
     return ruleResults;

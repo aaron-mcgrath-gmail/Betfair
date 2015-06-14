@@ -12,8 +12,9 @@ public class RuleEngine {
   }
   
   public RuleResultList run() {
-    RuleResultList results = null;
-    
+    RuleResultList results = new RuleResultList();
+    for(Rule rule : this.getRules())
+      results.add(rule.test());
     
     return results;
   }
